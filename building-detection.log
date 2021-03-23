@@ -1,0 +1,1184 @@
+[2021-03-23 11:29:34,748 - _internal.py:113 -                 _log()] INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2021-03-23 11:31:02,831 - _internal.py:113 -                 _log()] INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2021-03-23 11:31:52,067 - _internal.py:113 -                 _log()] INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2021-03-23 11:33:27,044 - _internal.py:113 -                 _log()] INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2021-03-23 11:44:57,276 - app.py:1891 -        log_exception()] ERROR: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/sandeep/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1925, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/sandeep/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1907, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/sandeep/anaconda3/lib/python3.7/site-packages/flask/ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "/home/sandeep/anaconda3/lib/python3.7/site-packages/werkzeug/routing.py", line 1799, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/sandeep/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/sandeep/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1815, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/home/sandeep/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1743, in handle_http_exception
+    return handler(e)
+  File "/home/sandeep/GoogleDrive/beans-home/git-repos/computervision_template/app.py", line 130, in all_exception_handler
+    stacktrace = ''.join(traceback.format_tb(error.__traceback__))
+NameError: name 'traceback' is not defined
+[2021-03-23 11:46:27,335 - app.py:1891 -        log_exception()] ERROR: Exception on /test/path/ [GET]
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/sandeep/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/sandeep/GoogleDrive/beans-home/git-repos/computervision_template/app.py", line 94, in app_entry_point
+    img_file = request.files['img']
+  File "/home/sandeep/anaconda3/lib/python3.7/site-packages/werkzeug/datastructures.py", line 443, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/sandeep/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/sandeep/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1815, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/home/sandeep/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1743, in handle_http_exception
+    return handler(e)
+  File "/home/sandeep/GoogleDrive/beans-home/git-repos/computervision_template/app.py", line 130, in all_exception_handler
+    stacktrace = ''.join(traceback.format_tb(error.__traceback__))
+NameError: name 'traceback' is not defined
+[2021-03-23 11:46:27,759 - app.py:1891 -        log_exception()] ERROR: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/sandeep/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1925, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/sandeep/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1907, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/sandeep/anaconda3/lib/python3.7/site-packages/flask/ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "/home/sandeep/anaconda3/lib/python3.7/site-packages/werkzeug/routing.py", line 1799, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/sandeep/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/sandeep/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1815, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/home/sandeep/anaconda3/lib/python3.7/site-packages/flask/app.py", line 1743, in handle_http_exception
+    return handler(e)
+  File "/home/sandeep/GoogleDrive/beans-home/git-repos/computervision_template/app.py", line 130, in all_exception_handler
+    stacktrace = ''.join(traceback.format_tb(error.__traceback__))
+NameError: name 'traceback' is not defined
+[2021-03-23 11:46:57,644 - _internal.py:113 -                 _log()] INFO:  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+[2021-03-23 11:50:34,784 - _internal.py:113 -                 _log()] INFO:  * Running on http://127.0.0.1:9898/ (Press CTRL+C to quit)
+[2021-03-23 11:50:50,459 - _internal.py:113 -                 _log()] INFO: 127.0.0.1 - - [23/Mar/2021 11:50:50] "[37mGET / HTTP/1.1[0m" 200 -
+[2021-03-23 11:50:51,591 - app.py:1892 -        log_exception()] ERROR: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1744, in handle_http_exception
+    return handler(e)
+  File "/home/sandeep/GoogleDrive/beans-home/git-repos/computervision_template/app.py", line 130, in all_exception_handler
+    stacktrace = ''.join(traceback.format_tb(error.__traceback__))
+NameError: name 'traceback' is not defined
+[2021-03-23 11:50:51,610 - _internal.py:113 -                 _log()] INFO: 127.0.0.1 - - [23/Mar/2021 11:50:51] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2021-03-23 11:50:51,616 - _internal.py:113 -                 _log()] ERROR: Error on request:
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1744, in handle_http_exception
+    return handler(e)
+  File "/home/sandeep/GoogleDrive/beans-home/git-repos/computervision_template/app.py", line 130, in all_exception_handler
+    stacktrace = ''.join(traceback.format_tb(error.__traceback__))
+NameError: name 'traceback' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/serving.py", line 323, in run_wsgi
+    execute(self.server.app)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/serving.py", line 312, in execute
+    application_iter = app(environ, start_response)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1879, in handle_exception
+    server_error = handler(server_error)
+  File "/home/sandeep/GoogleDrive/beans-home/git-repos/computervision_template/app.py", line 130, in all_exception_handler
+    stacktrace = ''.join(traceback.format_tb(error.__traceback__))
+NameError: name 'traceback' is not defined
+[2021-03-23 11:51:02,426 - app.py:1892 -        log_exception()] ERROR: Exception on /test/path/ [GET]
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/sandeep/GoogleDrive/beans-home/git-repos/computervision_template/app.py", line 94, in app_entry_point
+    img_file = request.files['img']
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1744, in handle_http_exception
+    return handler(e)
+  File "/home/sandeep/GoogleDrive/beans-home/git-repos/computervision_template/app.py", line 130, in all_exception_handler
+    stacktrace = ''.join(traceback.format_tb(error.__traceback__))
+NameError: name 'traceback' is not defined
+[2021-03-23 11:51:02,430 - _internal.py:113 -                 _log()] INFO: 127.0.0.1 - - [23/Mar/2021 11:51:02] "[35m[1mGET /test/path/ HTTP/1.1[0m" 500 -
+[2021-03-23 11:51:02,434 - _internal.py:113 -                 _log()] ERROR: Error on request:
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/sandeep/GoogleDrive/beans-home/git-repos/computervision_template/app.py", line 94, in app_entry_point
+    img_file = request.files['img']
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1744, in handle_http_exception
+    return handler(e)
+  File "/home/sandeep/GoogleDrive/beans-home/git-repos/computervision_template/app.py", line 130, in all_exception_handler
+    stacktrace = ''.join(traceback.format_tb(error.__traceback__))
+NameError: name 'traceback' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/serving.py", line 323, in run_wsgi
+    execute(self.server.app)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/serving.py", line 312, in execute
+    application_iter = app(environ, start_response)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1879, in handle_exception
+    server_error = handler(server_error)
+  File "/home/sandeep/GoogleDrive/beans-home/git-repos/computervision_template/app.py", line 130, in all_exception_handler
+    stacktrace = ''.join(traceback.format_tb(error.__traceback__))
+NameError: name 'traceback' is not defined
+[2021-03-23 11:51:02,661 - app.py:1892 -        log_exception()] ERROR: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1744, in handle_http_exception
+    return handler(e)
+  File "/home/sandeep/GoogleDrive/beans-home/git-repos/computervision_template/app.py", line 130, in all_exception_handler
+    stacktrace = ''.join(traceback.format_tb(error.__traceback__))
+NameError: name 'traceback' is not defined
+[2021-03-23 11:51:02,678 - _internal.py:113 -                 _log()] INFO: 127.0.0.1 - - [23/Mar/2021 11:51:02] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2021-03-23 11:51:02,697 - _internal.py:113 -                 _log()] ERROR: Error on request:
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1744, in handle_http_exception
+    return handler(e)
+  File "/home/sandeep/GoogleDrive/beans-home/git-repos/computervision_template/app.py", line 130, in all_exception_handler
+    stacktrace = ''.join(traceback.format_tb(error.__traceback__))
+NameError: name 'traceback' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/serving.py", line 323, in run_wsgi
+    execute(self.server.app)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/serving.py", line 312, in execute
+    application_iter = app(environ, start_response)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1879, in handle_exception
+    server_error = handler(server_error)
+  File "/home/sandeep/GoogleDrive/beans-home/git-repos/computervision_template/app.py", line 130, in all_exception_handler
+    stacktrace = ''.join(traceback.format_tb(error.__traceback__))
+NameError: name 'traceback' is not defined
+[2021-03-23 12:00:22,651 - _internal.py:113 -                 _log()] INFO: 127.0.0.1 - - [23/Mar/2021 12:00:22] "[32mPOST /test/path HTTP/1.1[0m" 308 -
+[2021-03-23 12:00:43,023 - _internal.py:113 -                 _log()] INFO: 127.0.0.1 - - [23/Mar/2021 12:00:43] "[32mPOST /test/path HTTP/1.1[0m" 308 -
+[2021-03-23 12:00:57,365 - app.py:1892 -        log_exception()] ERROR: Exception on / [POST]
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/routing.py", line 1940, in match
+    raise MethodNotAllowed(valid_methods=list(have_match_for))
+werkzeug.exceptions.MethodNotAllowed: 405 Method Not Allowed: The method is not allowed for the requested URL.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1744, in handle_http_exception
+    return handler(e)
+  File "/home/sandeep/GoogleDrive/beans-home/git-repos/computervision_template/app.py", line 130, in all_exception_handler
+    # A generic error handler that logs all thrown exceptions
+NameError: name 'traceback' is not defined
+[2021-03-23 12:00:57,368 - _internal.py:113 -                 _log()] INFO: 127.0.0.1 - - [23/Mar/2021 12:00:57] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+[2021-03-23 12:00:57,372 - _internal.py:113 -                 _log()] ERROR: Error on request:
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/routing.py", line 1940, in match
+    raise MethodNotAllowed(valid_methods=list(have_match_for))
+werkzeug.exceptions.MethodNotAllowed: 405 Method Not Allowed: The method is not allowed for the requested URL.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1744, in handle_http_exception
+    return handler(e)
+  File "/home/sandeep/GoogleDrive/beans-home/git-repos/computervision_template/app.py", line 130, in all_exception_handler
+    # A generic error handler that logs all thrown exceptions
+NameError: name 'traceback' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/serving.py", line 323, in run_wsgi
+    execute(self.server.app)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/serving.py", line 312, in execute
+    application_iter = app(environ, start_response)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1879, in handle_exception
+    server_error = handler(server_error)
+  File "/home/sandeep/GoogleDrive/beans-home/git-repos/computervision_template/app.py", line 130, in all_exception_handler
+    # A generic error handler that logs all thrown exceptions
+NameError: name 'traceback' is not defined
+[2021-03-23 12:01:02,189 - app.py:1892 -        log_exception()] ERROR: Exception on / [POST]
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/routing.py", line 1940, in match
+    raise MethodNotAllowed(valid_methods=list(have_match_for))
+werkzeug.exceptions.MethodNotAllowed: 405 Method Not Allowed: The method is not allowed for the requested URL.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1744, in handle_http_exception
+    return handler(e)
+  File "/home/sandeep/GoogleDrive/beans-home/git-repos/computervision_template/app.py", line 130, in all_exception_handler
+    # A generic error handler that logs all thrown exceptions
+NameError: name 'traceback' is not defined
+[2021-03-23 12:01:02,192 - _internal.py:113 -                 _log()] INFO: 127.0.0.1 - - [23/Mar/2021 12:01:02] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+[2021-03-23 12:01:02,195 - _internal.py:113 -                 _log()] ERROR: Error on request:
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/routing.py", line 1940, in match
+    raise MethodNotAllowed(valid_methods=list(have_match_for))
+werkzeug.exceptions.MethodNotAllowed: 405 Method Not Allowed: The method is not allowed for the requested URL.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1744, in handle_http_exception
+    return handler(e)
+  File "/home/sandeep/GoogleDrive/beans-home/git-repos/computervision_template/app.py", line 130, in all_exception_handler
+    # A generic error handler that logs all thrown exceptions
+NameError: name 'traceback' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/serving.py", line 323, in run_wsgi
+    execute(self.server.app)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/serving.py", line 312, in execute
+    application_iter = app(environ, start_response)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1879, in handle_exception
+    server_error = handler(server_error)
+  File "/home/sandeep/GoogleDrive/beans-home/git-repos/computervision_template/app.py", line 130, in all_exception_handler
+    # A generic error handler that logs all thrown exceptions
+NameError: name 'traceback' is not defined
+[2021-03-23 12:01:30,475 - _internal.py:113 -                 _log()] INFO: 127.0.0.1 - - [23/Mar/2021 12:01:30] "[37mGET / HTTP/1.1[0m" 200 -
+[2021-03-23 12:01:31,585 - app.py:1892 -        log_exception()] ERROR: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1744, in handle_http_exception
+    return handler(e)
+  File "/home/sandeep/GoogleDrive/beans-home/git-repos/computervision_template/app.py", line 130, in all_exception_handler
+    # A generic error handler that logs all thrown exceptions
+NameError: name 'traceback' is not defined
+[2021-03-23 12:01:31,610 - _internal.py:113 -                 _log()] INFO: 127.0.0.1 - - [23/Mar/2021 12:01:31] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2021-03-23 12:01:31,639 - _internal.py:113 -                 _log()] ERROR: Error on request:
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1744, in handle_http_exception
+    return handler(e)
+  File "/home/sandeep/GoogleDrive/beans-home/git-repos/computervision_template/app.py", line 130, in all_exception_handler
+    # A generic error handler that logs all thrown exceptions
+NameError: name 'traceback' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/serving.py", line 323, in run_wsgi
+    execute(self.server.app)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/serving.py", line 312, in execute
+    application_iter = app(environ, start_response)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1879, in handle_exception
+    server_error = handler(server_error)
+  File "/home/sandeep/GoogleDrive/beans-home/git-repos/computervision_template/app.py", line 130, in all_exception_handler
+    # A generic error handler that logs all thrown exceptions
+NameError: name 'traceback' is not defined
+[2021-03-23 12:01:57,599 - _internal.py:113 -                 _log()] INFO:  * Running on http://127.0.0.1:9898/ (Press CTRL+C to quit)
+[2021-03-23 12:02:05,432 - _internal.py:113 -                 _log()] INFO: 127.0.0.1 - - [23/Mar/2021 12:02:05] "[37mGET / HTTP/1.1[0m" 200 -
+[2021-03-23 12:02:06,651 - app.py:1892 -        log_exception()] ERROR: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1744, in handle_http_exception
+    return handler(e)
+  File "/home/sandeep/GoogleDrive/beans-home/git-repos/computervision_template/app.py", line 134, in all_exception_handler
+    stacktrace = ''.join(traceback.format_tb(error.__traceback__))
+NameError: name 'traceback' is not defined
+[2021-03-23 12:02:06,705 - _internal.py:113 -                 _log()] INFO: 127.0.0.1 - - [23/Mar/2021 12:02:06] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2021-03-23 12:02:06,731 - _internal.py:113 -                 _log()] ERROR: Error on request:
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1744, in handle_http_exception
+    return handler(e)
+  File "/home/sandeep/GoogleDrive/beans-home/git-repos/computervision_template/app.py", line 134, in all_exception_handler
+    stacktrace = ''.join(traceback.format_tb(error.__traceback__))
+NameError: name 'traceback' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/serving.py", line 323, in run_wsgi
+    execute(self.server.app)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/serving.py", line 312, in execute
+    application_iter = app(environ, start_response)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1879, in handle_exception
+    server_error = handler(server_error)
+  File "/home/sandeep/GoogleDrive/beans-home/git-repos/computervision_template/app.py", line 134, in all_exception_handler
+    stacktrace = ''.join(traceback.format_tb(error.__traceback__))
+NameError: name 'traceback' is not defined
+[2021-03-23 12:12:33,499 - app.py:1892 -        log_exception()] ERROR: Exception on /test/path/ [GET]
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/sandeep/GoogleDrive/beans-home/git-repos/computervision_template/app.py", line 98, in app_entry_point
+    img_file = request.files['img']
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1744, in handle_http_exception
+    return handler(e)
+  File "/home/sandeep/GoogleDrive/beans-home/git-repos/computervision_template/app.py", line 134, in all_exception_handler
+    stacktrace = ''.join(traceback.format_tb(error.__traceback__))
+NameError: name 'traceback' is not defined
+[2021-03-23 12:12:40,444 - _internal.py:113 -                 _log()] INFO: 127.0.0.1 - - [23/Mar/2021 12:12:40] "[35m[1mGET /test/path/ HTTP/1.1[0m" 500 -
+[2021-03-23 12:12:40,453 - _internal.py:113 -                 _log()] ERROR: Error on request:
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/sandeep/GoogleDrive/beans-home/git-repos/computervision_template/app.py", line 98, in app_entry_point
+    img_file = request.files['img']
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1744, in handle_http_exception
+    return handler(e)
+  File "/home/sandeep/GoogleDrive/beans-home/git-repos/computervision_template/app.py", line 134, in all_exception_handler
+    stacktrace = ''.join(traceback.format_tb(error.__traceback__))
+NameError: name 'traceback' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/serving.py", line 323, in run_wsgi
+    execute(self.server.app)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/serving.py", line 312, in execute
+    application_iter = app(environ, start_response)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1879, in handle_exception
+    server_error = handler(server_error)
+  File "/home/sandeep/GoogleDrive/beans-home/git-repos/computervision_template/app.py", line 134, in all_exception_handler
+    stacktrace = ''.join(traceback.format_tb(error.__traceback__))
+NameError: name 'traceback' is not defined
+[2021-03-23 12:12:41,001 - app.py:1892 -        log_exception()] ERROR: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1744, in handle_http_exception
+    return handler(e)
+  File "/home/sandeep/GoogleDrive/beans-home/git-repos/computervision_template/app.py", line 134, in all_exception_handler
+    stacktrace = ''.join(traceback.format_tb(error.__traceback__))
+NameError: name 'traceback' is not defined
+[2021-03-23 12:12:41,016 - _internal.py:113 -                 _log()] INFO: 127.0.0.1 - - [23/Mar/2021 12:12:41] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2021-03-23 12:12:41,036 - _internal.py:113 -                 _log()] ERROR: Error on request:
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1744, in handle_http_exception
+    return handler(e)
+  File "/home/sandeep/GoogleDrive/beans-home/git-repos/computervision_template/app.py", line 134, in all_exception_handler
+    stacktrace = ''.join(traceback.format_tb(error.__traceback__))
+NameError: name 'traceback' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/serving.py", line 323, in run_wsgi
+    execute(self.server.app)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/serving.py", line 312, in execute
+    application_iter = app(environ, start_response)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1879, in handle_exception
+    server_error = handler(server_error)
+  File "/home/sandeep/GoogleDrive/beans-home/git-repos/computervision_template/app.py", line 134, in all_exception_handler
+    stacktrace = ''.join(traceback.format_tb(error.__traceback__))
+NameError: name 'traceback' is not defined
+[2021-03-23 12:14:44,528 - _internal.py:113 -                 _log()] INFO:  * Running on http://127.0.0.1:9898/ (Press CTRL+C to quit)
+[2021-03-23 12:15:00,297 - app.py:1892 -        log_exception()] ERROR: Exception on /test/path/ [GET]
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/sandeep/GoogleDrive/beans-home/git-repos/computervision_template/app.py", line 99, in app_entry_point
+    img_file = request.files['img']
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1744, in handle_http_exception
+    return handler(e)
+  File "/home/sandeep/GoogleDrive/beans-home/git-repos/computervision_template/app.py", line 135, in all_exception_handler
+    stacktrace = ''.join(traceback.format_tb(error.__traceback__))
+NameError: name 'traceback' is not defined
+[2021-03-23 12:15:00,344 - _internal.py:113 -                 _log()] INFO: 127.0.0.1 - - [23/Mar/2021 12:15:00] "[35m[1mGET /test/path/ HTTP/1.1[0m" 500 -
+[2021-03-23 12:15:00,371 - _internal.py:113 -                 _log()] ERROR: Error on request:
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/sandeep/GoogleDrive/beans-home/git-repos/computervision_template/app.py", line 99, in app_entry_point
+    img_file = request.files['img']
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1744, in handle_http_exception
+    return handler(e)
+  File "/home/sandeep/GoogleDrive/beans-home/git-repos/computervision_template/app.py", line 135, in all_exception_handler
+    stacktrace = ''.join(traceback.format_tb(error.__traceback__))
+NameError: name 'traceback' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/serving.py", line 323, in run_wsgi
+    execute(self.server.app)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/serving.py", line 312, in execute
+    application_iter = app(environ, start_response)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1879, in handle_exception
+    server_error = handler(server_error)
+  File "/home/sandeep/GoogleDrive/beans-home/git-repos/computervision_template/app.py", line 135, in all_exception_handler
+    stacktrace = ''.join(traceback.format_tb(error.__traceback__))
+NameError: name 'traceback' is not defined
+[2021-03-23 12:15:01,256 - app.py:1892 -        log_exception()] ERROR: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1744, in handle_http_exception
+    return handler(e)
+  File "/home/sandeep/GoogleDrive/beans-home/git-repos/computervision_template/app.py", line 135, in all_exception_handler
+    stacktrace = ''.join(traceback.format_tb(error.__traceback__))
+NameError: name 'traceback' is not defined
+[2021-03-23 12:15:01,274 - _internal.py:113 -                 _log()] INFO: 127.0.0.1 - - [23/Mar/2021 12:15:01] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2021-03-23 12:15:01,296 - _internal.py:113 -                 _log()] ERROR: Error on request:
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1744, in handle_http_exception
+    return handler(e)
+  File "/home/sandeep/GoogleDrive/beans-home/git-repos/computervision_template/app.py", line 135, in all_exception_handler
+    stacktrace = ''.join(traceback.format_tb(error.__traceback__))
+NameError: name 'traceback' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/serving.py", line 323, in run_wsgi
+    execute(self.server.app)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/serving.py", line 312, in execute
+    application_iter = app(environ, start_response)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1879, in handle_exception
+    server_error = handler(server_error)
+  File "/home/sandeep/GoogleDrive/beans-home/git-repos/computervision_template/app.py", line 135, in all_exception_handler
+    stacktrace = ''.join(traceback.format_tb(error.__traceback__))
+NameError: name 'traceback' is not defined
+[2021-03-23 12:15:24,876 - app.py:1892 -        log_exception()] ERROR: Exception on /test/path/ [GET]
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/sandeep/GoogleDrive/beans-home/git-repos/computervision_template/app.py", line 99, in app_entry_point
+    img_file = request.files['img']
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1744, in handle_http_exception
+    return handler(e)
+  File "/home/sandeep/GoogleDrive/beans-home/git-repos/computervision_template/app.py", line 135, in all_exception_handler
+    stacktrace = ''.join(traceback.format_tb(error.__traceback__))
+NameError: name 'traceback' is not defined
+[2021-03-23 12:15:25,823 - _internal.py:113 -                 _log()] INFO: 127.0.0.1 - - [23/Mar/2021 12:15:25] "[35m[1mGET /test/path/ HTTP/1.1[0m" 500 -
+[2021-03-23 12:15:25,848 - _internal.py:113 -                 _log()] ERROR: Error on request:
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/sandeep/GoogleDrive/beans-home/git-repos/computervision_template/app.py", line 99, in app_entry_point
+    img_file = request.files['img']
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1744, in handle_http_exception
+    return handler(e)
+  File "/home/sandeep/GoogleDrive/beans-home/git-repos/computervision_template/app.py", line 135, in all_exception_handler
+    stacktrace = ''.join(traceback.format_tb(error.__traceback__))
+NameError: name 'traceback' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/serving.py", line 323, in run_wsgi
+    execute(self.server.app)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/serving.py", line 312, in execute
+    application_iter = app(environ, start_response)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1879, in handle_exception
+    server_error = handler(server_error)
+  File "/home/sandeep/GoogleDrive/beans-home/git-repos/computervision_template/app.py", line 135, in all_exception_handler
+    stacktrace = ''.join(traceback.format_tb(error.__traceback__))
+NameError: name 'traceback' is not defined
+[2021-03-23 12:15:26,673 - app.py:1892 -        log_exception()] ERROR: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1744, in handle_http_exception
+    return handler(e)
+  File "/home/sandeep/GoogleDrive/beans-home/git-repos/computervision_template/app.py", line 135, in all_exception_handler
+    stacktrace = ''.join(traceback.format_tb(error.__traceback__))
+NameError: name 'traceback' is not defined
+[2021-03-23 12:15:26,693 - _internal.py:113 -                 _log()] INFO: 127.0.0.1 - - [23/Mar/2021 12:15:26] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2021-03-23 12:15:26,715 - _internal.py:113 -                 _log()] ERROR: Error on request:
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1744, in handle_http_exception
+    return handler(e)
+  File "/home/sandeep/GoogleDrive/beans-home/git-repos/computervision_template/app.py", line 135, in all_exception_handler
+    stacktrace = ''.join(traceback.format_tb(error.__traceback__))
+NameError: name 'traceback' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/serving.py", line 323, in run_wsgi
+    execute(self.server.app)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/serving.py", line 312, in execute
+    application_iter = app(environ, start_response)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 2464, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 2450, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1879, in handle_exception
+    server_error = handler(server_error)
+  File "/home/sandeep/GoogleDrive/beans-home/git-repos/computervision_template/app.py", line 135, in all_exception_handler
+    stacktrace = ''.join(traceback.format_tb(error.__traceback__))
+NameError: name 'traceback' is not defined
+[2021-03-23 12:23:23,046 - _internal.py:113 -                 _log()] INFO:  * Running on http://127.0.0.1:9898/ (Press CTRL+C to quit)
+[2021-03-23 12:23:43,321 - _internal.py:113 -                 _log()] INFO:  * Running on http://127.0.0.1:9898/ (Press CTRL+C to quit)
+[2021-03-23 12:23:59,030 - app.py:137 - all_exception_handler()] ERROR: Exception: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+[2021-03-23 12:23:59,842 - app.py:138 - all_exception_handler()] ERROR: Exception: 
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/sandeep/GoogleDrive/beans-home/git-repos/computervision_template/app.py", line 100, in app_entry_point
+    img_file = request.files['img']
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/datastructures.py", line 442, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+
+[2021-03-23 12:24:03,638 - utils.py:9 -           send_error()] ERROR: Exception: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+[2021-03-23 12:24:03,651 - _internal.py:113 -                 _log()] INFO: 127.0.0.1 - - [23/Mar/2021 12:24:03] "[35m[1mGET /test/path/ HTTP/1.1[0m" 500 -
+[2021-03-23 12:24:05,177 - app.py:137 - all_exception_handler()] ERROR: Exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2021-03-23 12:24:05,177 - app.py:138 - all_exception_handler()] ERROR: Exception: 
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/routing.py", line 1945, in match
+    raise NotFound()
+
+[2021-03-23 12:24:05,178 - utils.py:9 -           send_error()] ERROR: Exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2021-03-23 12:24:05,181 - _internal.py:113 -                 _log()] INFO: 127.0.0.1 - - [23/Mar/2021 12:24:05] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2021-03-23 12:25:06,836 - _internal.py:113 -                 _log()] INFO:  * Running on http://127.0.0.1:9898/ (Press CTRL+C to quit)
+[2021-03-23 12:25:37,856 - _internal.py:113 -                 _log()] INFO: 127.0.0.1 - - [23/Mar/2021 12:25:37] "[32mPOST /test/path HTTP/1.1[0m" 308 -
+[2021-03-23 12:25:51,984 - app.py:137 - all_exception_handler()] ERROR: Exception: 405 Method Not Allowed: The method is not allowed for the requested URL.
+[2021-03-23 12:25:51,985 - app.py:138 - all_exception_handler()] ERROR: Exception: 
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/routing.py", line 1940, in match
+    raise MethodNotAllowed(valid_methods=list(have_match_for))
+
+[2021-03-23 12:25:51,985 - utils.py:9 -           send_error()] ERROR: Exception: 405 Method Not Allowed: The method is not allowed for the requested URL.
+[2021-03-23 12:25:51,985 - _internal.py:113 -                 _log()] INFO: 127.0.0.1 - - [23/Mar/2021 12:25:51] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+[2021-03-23 12:26:15,794 - _internal.py:113 -                 _log()] INFO: 127.0.0.1 - - [23/Mar/2021 12:26:15] "[37mGET / HTTP/1.1[0m" 200 -
+[2021-03-23 12:26:16,963 - app.py:137 - all_exception_handler()] ERROR: Exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2021-03-23 12:26:16,963 - app.py:138 - all_exception_handler()] ERROR: Exception: 
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/routing.py", line 1945, in match
+    raise NotFound()
+
+[2021-03-23 12:26:16,964 - utils.py:9 -           send_error()] ERROR: Exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2021-03-23 12:26:16,967 - _internal.py:113 -                 _log()] INFO: 127.0.0.1 - - [23/Mar/2021 12:26:16] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2021-03-23 12:27:09,755 - app.py:137 - all_exception_handler()] ERROR: Exception: name 'url2name' is not defined
+[2021-03-23 12:27:10,203 - app.py:138 - all_exception_handler()] ERROR: Exception: 
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/sandeep/GoogleDrive/beans-home/git-repos/computervision_template/app.py", line 95, in app_entry_point
+    img_file_name = url2name(url)
+
+[2021-03-23 12:27:10,710 - utils.py:9 -           send_error()] ERROR: Exception: name 'url2name' is not defined
+[2021-03-23 12:27:10,717 - _internal.py:113 -                 _log()] INFO: 127.0.0.1 - - [23/Mar/2021 12:27:10] "[35m[1mPOST /test/path/ HTTP/1.1[0m" 500 -
+[2021-03-23 12:29:31,748 - _internal.py:113 -                 _log()] INFO:  * Running on http://127.0.0.1:9898/ (Press CTRL+C to quit)
+[2021-03-23 12:30:12,372 - app.py:139 - all_exception_handler()] ERROR: Exception: type object 'datetime.datetime' has no attribute 'datetime'
+[2021-03-23 12:30:12,372 - app.py:140 - all_exception_handler()] ERROR: Exception: 
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/sandeep/GoogleDrive/beans-home/git-repos/computervision_template/app.py", line 98, in app_entry_point
+    file_name_prefix = str(datetime.datetime.now()) +img_file_name.split('.')[0] #Expects url to be from google storage file named with bounds and date time
+
+[2021-03-23 12:30:12,373 - utils.py:9 -           send_error()] ERROR: Exception: type object 'datetime.datetime' has no attribute 'datetime'
+[2021-03-23 12:30:12,375 - _internal.py:113 -                 _log()] INFO: 127.0.0.1 - - [23/Mar/2021 12:30:12] "[35m[1mPOST /test/path/ HTTP/1.1[0m" 500 -
+[2021-03-23 12:31:48,567 - _internal.py:113 -                 _log()] INFO:  * Running on http://127.0.0.1:9898/ (Press CTRL+C to quit)
+[2021-03-23 12:32:19,804 - app.py:100 -      app_entry_point()] INFO: Downloaded image from url :  https://i.ibb.co/C0fhFZy/staticmap.png
+[2021-03-23 12:33:13,220 - app.py:127 -      app_entry_point()] INFO: Finished prediction as : http://localhost:9898/resulting_imgs/2021-03-23%2012%3A32%3A11.442306staticmap_n_clustered_byspace_byroof.png
+[2021-03-23 12:33:15,591 - app.py:129 -      app_entry_point()] INFO: Total time in seconds spent in request processing: 71.62755846977234
+[2021-03-23 12:33:16,594 - _internal.py:113 -                 _log()] INFO: 127.0.0.1 - - [23/Mar/2021 12:33:16] "[37mPOST /test/path/ HTTP/1.1[0m" 200 -
+[2021-03-23 12:36:45,420 - _internal.py:113 -                 _log()] INFO:  * Running on http://127.0.0.1:9898/ (Press CTRL+C to quit)
+[2021-03-23 12:36:55,093 - app.py:139 - all_exception_handler()] ERROR: Exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2021-03-23 12:36:55,093 - app.py:140 - all_exception_handler()] ERROR: Exception: 
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/werkzeug/routing.py", line 1945, in match
+    raise NotFound()
+
+[2021-03-23 12:36:55,093 - utils.py:9 -           send_error()] ERROR: Exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2021-03-23 12:36:55,095 - _internal.py:113 -                 _log()] INFO: 127.0.0.1 - - [23/Mar/2021 12:36:55] "[35m[1mPOST /test/path/ HTTP/1.1[0m" 500 -
+[2021-03-23 12:37:21,492 - app.py:100 -      app_entry_point()] INFO: Downloaded image from url :  https://i.ibb.co/C0fhFZy/staticmap.png
+[2021-03-23 12:37:23,035 - app.py:127 -      app_entry_point()] INFO: Finished prediction as : http://localhost:9898/resulting_imgs/2021-03-23%2012%3A37%3A20.462361staticmap_n_clustered_byspace_byroof.png
+[2021-03-23 12:37:23,036 - app.py:129 -      app_entry_point()] INFO: Total time in seconds spent in request processing: 10.634571313858032
+[2021-03-23 12:37:23,036 - _internal.py:113 -                 _log()] INFO: 127.0.0.1 - - [23/Mar/2021 12:37:23] "[37mPOST /test/path HTTP/1.1[0m" 200 -
+[2021-03-23 12:43:06,127 - _internal.py:113 -                 _log()] INFO:  * Running on http://127.0.0.1:9898/ (Press CTRL+C to quit)
+[2021-03-23 12:43:27,664 - app.py:102 -      app_entry_point()] INFO: Downloaded image from url :  https://i.ibb.co/C0fhFZy/staticmap.png
+[2021-03-23 12:43:33,900 - app.py:129 -      app_entry_point()] INFO: Finished prediction as : http://localhost:9898/resulting_imgs/03-23-2021_12-43-17staticmap_n_clustered_byspace_byroof.png
+[2021-03-23 12:43:34,427 - app.py:131 -      app_entry_point()] INFO: Total time in seconds spent in request processing: 21.479246377944946
+[2021-03-23 12:43:36,848 - _internal.py:113 -                 _log()] INFO: 127.0.0.1 - - [23/Mar/2021 12:43:36] "[37mPOST /test/path HTTP/1.1[0m" 200 -
+[2021-03-23 12:46:59,938 - _internal.py:113 -                 _log()] INFO:  * Running on http://127.0.0.1:9898/ (Press CTRL+C to quit)
+[2021-03-23 12:47:10,019 - app.py:103 -      app_entry_point()] INFO: Downloaded image from url :  https://i.ibb.co/C0fhFZy/staticmap.png
+[2021-03-23 12:47:10,745 - app.py:130 -      app_entry_point()] INFO: Finished prediction as : http://localhost:9898/resulting_imgs/03-23-2021_12-47-09staticmap_n_clustered_byspace_byroof.png
+[2021-03-23 12:47:10,745 - app.py:132 -      app_entry_point()] INFO: Total time in seconds spent in request processing: 1.7793679237365723
+[2021-03-23 12:47:10,747 - _internal.py:113 -                 _log()] INFO: 127.0.0.1 - - [23/Mar/2021 12:47:10] "[37mPOST /test/path HTTP/1.1[0m" 200 -
+[2021-03-23 12:52:00,315 - _internal.py:113 -                 _log()] INFO:  * Running on http://127.0.0.1:9898/ (Press CTRL+C to quit)
+[2021-03-23 12:52:21,407 - app.py:106 -      app_entry_point()] INFO: Downloaded image from url :  https://i.ibb.co/C0fhFZy/staticmap.png
+[2021-03-23 12:52:22,115 - app.py:133 -      app_entry_point()] INFO: Finished prediction as : http://localhost:9898/resulting_imgs/03-23-2021_12-52-20staticmap_n_clustered_byspace_byroof.png
+[2021-03-23 12:52:22,115 - app.py:135 -      app_entry_point()] INFO: Total time in seconds spent in request processing: 1.7551543712615967
+[2021-03-23 12:52:22,117 - _internal.py:113 -                 _log()] INFO: 127.0.0.1 - - [23/Mar/2021 12:52:22] "[37mPOST /test/path HTTP/1.1[0m" 200 -
+[2021-03-23 12:54:16,446 - _internal.py:113 -                 _log()] INFO:  * Running on http://127.0.0.1:9898/ (Press CTRL+C to quit)
+[2021-03-23 12:54:46,184 - app.py:145 - all_exception_handler()] ERROR: Exception: name 'time_keeper' is not defined
+[2021-03-23 12:54:46,184 - app.py:146 - all_exception_handler()] ERROR: Exception: 
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/sandeep/anaconda3/envs/pythongis_base/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/sandeep/GoogleDrive/beans-home/git-repos/computervision_template/app.py", line 95, in app_entry_point
+    time_keeper.start_timer('test_request_start')
+
+[2021-03-23 12:54:46,184 - utils.py:9 -           send_error()] ERROR: Exception: name 'time_keeper' is not defined
+[2021-03-23 12:54:46,186 - _internal.py:113 -                 _log()] INFO: 127.0.0.1 - - [23/Mar/2021 12:54:46] "[35m[1mPOST /test/path HTTP/1.1[0m" 500 -
+[2021-03-23 12:55:39,679 - _internal.py:113 -                 _log()] INFO:  * Running on http://127.0.0.1:9898/ (Press CTRL+C to quit)
+[2021-03-23 12:56:14,635 - app.py:110 -      app_entry_point()] INFO: Downloaded image from url :  https://i.ibb.co/C0fhFZy/staticmap.png
+[2021-03-23 12:56:15,380 - app.py:137 -      app_entry_point()] INFO: Finished prediction as : http://localhost:9898/resulting_imgs/03-23-2021_12-56-13staticmap_n_clustered_byspace_byroof.png
+[2021-03-23 12:56:15,380 - app.py:139 -      app_entry_point()] INFO: Total time in seconds spent in request processing: 1.824
+[2021-03-23 12:56:15,382 - _internal.py:113 -                 _log()] INFO: 127.0.0.1 - - [23/Mar/2021 12:56:15] "[37mPOST /test/path HTTP/1.1[0m" 200 -

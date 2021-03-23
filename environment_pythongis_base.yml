@@ -231,6 +231,7 @@ dependencies:
     - httplib2==0.18.1
     - imageio==2.9.0
     - iniconfig==1.1.1
+    - linecache2==1.0.0
     - munch==2.5.0
     - networkx==2.5
     - pluggy==0.13.1
@@ -240,6 +241,7 @@ dependencies:
     - pywavelets==1.1.1
     - scikit-image==0.17.2
     - tifffile==2020.9.3
+    - traceback2==1.4.0
     - uritemplate==3.0.1
 prefix: /home/sandeep/anaconda3/envs/pythongis_base
 
